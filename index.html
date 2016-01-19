@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hello Daniel Zheng</title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: Calibri, sans-serif;
+			}
+
+			.background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+
+			.content {
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				z-index: 1000;
+				background-color: rgba(0,0,0,0.7);
+			}
+	
+			.content h1{
+				text-align: center;
+				font-size: 65px;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: #fff;
+				padding-top: 8%;
+				margin-bottom: 5px;
+			}
+
+			.content p {
+				text-align: center;
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: #aaa;
+			}
+
+			#selfie {
+				position: absolute;
+				top: 45%;
+				left: 5%;
+			}
+
+			#hobby {
+				position: absolute;
+				top: 40%;
+				left: 25%;
+			}
+		</style>
+	</head>
+	<body>
+
+			<div class="background-wrap">
+				<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+					<source src="sunlight.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="content">
+				<h1><em>Hello</em> World</h1>
+
+				<p>Welcome to my website. My name is <strong>Daniel Zheng</strong> and I am an senior at the Communication department with Technology and Global Media as my areas of study.</p>
+				<div id="hobby">
+					<h1>My hobbies</h1>
+						<p>My hobbies include video games,sports,vinyl figure collecting, and anything 	that is technology.</p>
+				</div>
+			</div>
+			<div style="text-align: center;">
+				<img src="https://pbs.twimg.com/media/CCo8WicUsAAlxbO.png:large" alt="Cartoon Me" title="My morning side!" style="width:250px;height:150px;">
+			</div>
+
+			<div id="selfie">
+				<img src="Me.jpg" alt="Selfie Pic" title="Selfie" height="225px" width="200px" id="self">
+			</div>
+	</body>					
+</html>
+
